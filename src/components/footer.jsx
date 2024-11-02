@@ -22,7 +22,7 @@ function footer () {
         </div>
         <Contacts />
         <div className='flex gap-2 items-center mt-16 text-gray-400'>
-          <FaRegCopyright fill='rgb(156 163 175)' size={20}/>
+          <FaRegCopyright fill='rgb(156 163 175)' size={15}/>
           <p>2024</p>
         </div>
       </footer>
