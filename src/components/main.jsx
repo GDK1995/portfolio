@@ -4,20 +4,44 @@ import Resume from "./sections/resume";
 import Portfolio from "./sections/portfolio";
 import Footer from './footer';
 import TopBttn from "./items/TopBttn";
-// import { useState } from "react";
+import { scrollTo } from '../store/functions';
+import { useEffect, useState } from "react";
 
 function main() {
-  // const [coord, setCoord] = useState(0);
+  const [showTopButton, setShowTopButton] = useState(false);
+
+  const handleScrollTopButtonVisiblity = () => {
+    window.scrollY > 380 ? setShowTopButton(true) : setShowTopButton(false);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollTopButtonVisiblity);
+    return () => {
+      window.removeEventListener("scroll", handleScrollTopButtonVisiblity);
+    };
+  }, [])
+
+  // scroll to current part
+  const [divId, setDivId] = useState('home');
+
+  const handleDivId = (item) => { setDivId(item) };
+  useEffect(() => {
+    const coord = document.getElementById(divId).getBoundingClientRect();
+    window.addEventListener("click", scrollTo(coord.top));
+    return () => {
+      window.removeEventListener("click", scrollTo(coord.top));
+    };
+  }, [divId])
 
   return (
     <>
-      <main className="font-mono relative">
-        <Home id="home"/>
-        <About id="about"/>
-        <Resume id="resume"/>
-        <Portfolio id="portfolio"/>
-        <Footer id="contact"/>
-        <TopBttn />
+      <main className="relative">
+        <Home toScroll={handleDivId}/>
+        <About />
+        <Resume />
+        <Portfolio />
+        <Footer />
+        {showTopButton && (<TopBttn toScroll={handleDivId}/>)}
       </main>
     </>
   )

@@ -8,7 +8,7 @@ export const PORTFOLIO = 'portfolio'
 
 export const CONTACTS = 'contacts'
 
-export const NAV_LIST = [HOME, ABOUT, RESUME, PORTFOLIO, CONTACTS]
+export const NAV_LIST = [ABOUT, RESUME, PORTFOLIO, CONTACTS]
 
 export const LG_SCREEN = 1024
 
@@ -66,31 +66,31 @@ export const PYTHON = 'python'
 export const SKILL_LIST = [
   {
     skill: HTML_5,
-    percent: 100
+    percent: '100%'
   },
   {
     skill: JS,
-    percent: 80
+    percent: '80%'
   },
   {
     skill: VUE,
-    percent: 90
+    percent: '90%'
   },
   {
     skill: REACT,
-    percent: 50
+    percent: '55%'
   },
   {
     skill: PYTHON,
-    percent: 50
+    percent: '50%'
   },
   {
     skill: CSS,
-    percent: 80
+    percent: '80%'
   },
   {
     skill: TAILWIND,
-    percent: 80
+    percent: '80%'
   }
 ]
 
@@ -129,3 +129,5 @@ export const ST_SPECIALITY = 'Software engineer'
 export const PLACE = 'Almaty, Kazakhstan'
 
 export const CONT_LIST = [PLACE, MY_MAIL]
+
+export const YEAR = '2024'

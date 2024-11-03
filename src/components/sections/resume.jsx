@@ -19,7 +19,7 @@ function resume () {
 
   return (
     <>
-      <section className='flex flex-col py-24 items-center bg-gray-100'>
+      <section id="resume" className='flex flex-col py-24 items-center bg-gray-100'>
         <h5 className={PINK_TEXT}>{RESUME}</h5>
         <div className='flex flex-col justify-center items-center mt-10'>
           {jobExp}

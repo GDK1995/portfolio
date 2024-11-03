@@ -2,13 +2,15 @@ import { useState } from "react";
 import { NAV_LIST, LG_SCREEN } from "../store/constants";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-function header() {
-  const isScreenWide = window.screen.width < LG_SCREEN
+function header(props) {
+  const clicked = (item) => props.scroll(item);
 
-  const [nav, setNav] = useState(!isScreenWide)
+  const isScreenWide = window.screen.width < LG_SCREEN;
+
+  const [nav, setNav] = useState(!isScreenWide);
   const handleNav = () => { setNav(!nav) }
 
-  const navList = NAV_LIST.map((nav, index) => <li key={nav + index} className="p-4 cursor-pointer border-b lg:border-none border-gray-100 text-sm hover:text-base lg:text-base hover:text-lg w-36 lg:w-auto ease-in-out duration-200">{ nav }</li>);
+  const navList = NAV_LIST.map((nav, index) => <li key={nav + index} onClick={e => clicked(e.target.innerHTML)} className="p-4 cursor-pointer border-b lg:border-none border-gray-100 text-sm hover:text-base lg:text-base hover:lg:text-lg w-36 lg:w-auto ease-in-out duration-200">{ nav }</li>);
 
   return (
     <>

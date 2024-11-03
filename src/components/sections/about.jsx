@@ -16,11 +16,11 @@ function about () {
 
   return (
     <>
-      <section className="flex flex-col py-24 items-center">
+      <section id="about" className="flex flex-col py-24 items-center">
         <h5 className={PINK_TEXT}>{ABOUT}</h5>
         <img src="src/assets/img/img.png" alt="avatar" className="w-32 h-32 rounded-full object-cover mt-10"/>
-        <div className="flex flex-col lg:flex-row max-w-[1240px] mx-auto my-10">
-          <div className="mx-20 my-5">
+        <div className="flex flex-col lg:flex-row lg:w-full max-w-[1240px] lg:mx-auto my-10">
+          <div className="mx-4 lg:mx-20 my-5 w-full lg:w-1/2">
             <strong className="uppercase">
               {PROFILE}
             </strong>
@@ -28,7 +28,7 @@ function about () {
               {list}
             </ul>
           </div>
-          <div className="mx-20 lg:w-full my-5">
+          <div className="mx-4 lg:mx-20 my-5 w-full lg:w-1/2">
             <strong className="uppercase">
               {SKILLS}
             </strong>

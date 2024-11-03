@@ -1,5 +1,3 @@
-export const scroolToTop = (coord) => {
-  window.scrollTo({
-    top: coord, behavior: 'smooth'
-  })
+export const scrollTo = (coord) => {
+  window.scrollTo({top: coord, behavior: 'smooth'});
 }

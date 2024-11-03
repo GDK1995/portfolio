@@ -1,10 +1,14 @@
 import { FaArrowUpLong } from "react-icons/fa6";
-import { scroolToTop } from '../../store/functions';
 
-function TopBttn () {
+function TopBttn (props) {
+  const clicked = () => {
+    props.toScroll('home');
+    console.log('home')
+  }
+
   return (
     <>
-      <button onClick={scroolToTop} className="fixed flex bottom-0 right-0 h-14 w-10 bg-pink-500 hover:bg-pink-600">
+      <button onClick={clicked} className="fixed flex bottom-2 right-2 h-14 w-14 rounded-full bg-pink-500 hover:bg-pink-600">
         <FaArrowUpLong size={20} fill="white" className="m-auto"/>
       </button>
     </>
