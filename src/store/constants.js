@@ -95,36 +95,31 @@ export const SKILL_LIST = [
 ]
 
 // resume
-export const F_JOB = 'software technician'
+export const WORK = 'work experience'
 
-export const JOB_LIST = [PROFFESION, F_JOB]
+export const EDUCATION = 'education'
 
-export const F_JOB_TIME = 'July, 2021 - March, 2022'
+export const JOBS = [{
+  job: 'front-end developer',
+  time: 'April, 2022 - present',
+  company: 'Excourse',
+  about: ''
+}, {
+  job: 'software technician',
+  time: 'July, 2021 - March, 2022',
+  company: 'ТОО "Алматыэнергосервис"',
+  about: `Participated in the development of various training systems and programs for the Armed Forces of the Republic of Kazakhstan:\n
+          -Creating an architecture and writing a program to manage physical equipment in real time and collect usage statistics\n
+          -Creation of systems for interactive training of specialists\n
+          -Creation of a program for monitoring the condition of an aircraft`
+}]
 
-export const S_JOB_TIME = 'April, 2022 - present'
-
-export const JOB_TIME_LIST = [F_JOB_TIME, S_JOB_TIME]
-
-export const F_JOB_COMP = 'ТОО "Алматыэнергосервис"'
-
-export const S_JOB_COMP = 'Excourse'
-
-export const JOB_COMP_LIST = [F_JOB_COMP, S_JOB_COMP]
-
-export const F_JOB_ABOUT = `Participated in the development of various training systems and programs for the Armed Forces of the Republic of Kazakhstan:\n
-                            -Creating an architecture and writing a program to manage physical equipment in real time and collect usage statistics\n
-                            -Creation of systems for interactive training of specialists\n
-                            -Creation of a program for monitoring the condition of an aircraft`
-
-export const JOB_ABT_LIST = [F_JOB_ABOUT, F_JOB_ABOUT]
-
-export const ST_DEGREE = 'Bachelor degree'
-
-export const ST_TIME = '2013 - 2017'
-
-export const ST_UNIVERSITY = 'Satbayev university'
-
-export const ST_SPECIALITY = 'Software engineer'
+export const STUDY = {
+  degree: 'Bachelor degree',
+  time: '2013 - 2017',
+  university: 'Satbayev university',
+  speciality: 'Software engineer'
+}
 
 export const PLACE = 'Almaty, Kazakhstan'
 
