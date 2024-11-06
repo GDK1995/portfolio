@@ -19,13 +19,13 @@ function resume () {
 
   return (
     <>
-      <section id="resume" className='flex flex-col py-24 items-center bg-gray-100 w-full'>
+      <section id="resume" className='flex flex-col py-16 items-center bg-gray-100 w-full'>
         <h5 className={PINK_TEXT}>{RESUME}</h5>
-        <div className='flex flex-col mt-10 w-full 2xl:items-center'>
+        <div className='flex flex-col mt-10 max-w-[1248px] mx-auto 2xl:items-center'>
           <h2 className='text-center text-lg uppercase font-bold mb-4'>{WORK}</h2>
           {jobExp}
         </div>
-        <div className='flex flex-col mt-10 w-full 2xl:items-center'>
+        <div className='flex flex-col mt-10 max-w-[1248px] mx-auto 2xl:items-center'>
           <h2 className='text-center text-lg uppercase font-bold mb-4'>{EDUCATION}</h2>
           <Experience
             job={STUDY.degree}

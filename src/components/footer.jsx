@@ -8,14 +8,14 @@ import { MdMailOutline } from "react-icons/md";
 function footer () {
   const contact = CONT_LIST.map((item, index) =>
     <div key={item + index}
-      className='flex flex-col items-center px-4 lg:px-16 gap-4'>
+      className='flex flex-col items-center text-center px-4 lg:px-16 gap-4'>
       {index ? <MdMailOutline size={40} fill='rgb(236 72 153)' /> : <BsGeoAlt size={40} fill='rgb(236 72 153)' />}
       <strong>{item}</strong>
     </div>
   )
   return (
     <>
-      <footer id="contacts" className='bg-black flex flex-col items-center pt-24 pb-6 text-white'>
+      <footer id="contacts" className='bg-black flex flex-col items-center pt-16 pb-6 text-white'>
       <h5 className={PINK_TEXT}>{CONTACTS}</h5>
         <div className='flex my-20'>
           {contact}

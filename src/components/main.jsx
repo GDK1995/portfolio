@@ -1,8 +1,7 @@
 import Home from "./sections/home";
 import About from "./sections/about";
 import Resume from "./sections/resume";
-import Portfolio from "./sections/portfolio";
-import Footer from './footer';
+import Portfolio from "./sections/portfolio"
 import TopBttn from "./items/TopBttn";
 import { scrollTo } from '../store/functions';
 import { useEffect, useState } from "react";
@@ -35,12 +34,11 @@ function main() {
 
   return (
     <>
-      <main className="relative">
+      <main>
         <Home toScroll={handleDivId}/>
         <About />
         <Resume />
         <Portfolio />
-        <Footer />
         {showTopButton && (<TopBttn toScroll={handleDivId}/>)}
       </main>
     </>

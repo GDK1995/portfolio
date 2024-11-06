@@ -82,15 +82,15 @@ export const SKILL_LIST = [
   },
   {
     skill: PYTHON,
-    percent: '50%'
+    percent: '87%'
   },
   {
     skill: CSS,
-    percent: '80%'
+    percent: '100%'
   },
   {
     skill: TAILWIND,
-    percent: '80%'
+    percent: '95%'
   }
 ]
 
