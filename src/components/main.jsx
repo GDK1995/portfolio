@@ -21,7 +21,7 @@ function main() {
   }, [])
 
   // scroll to current part
-  const [divId, setDivId] = useState('home');
+  const [divId, setDivId] = useState('resume');
 
   const handleDivId = (item) => { setDivId(item) };
   useEffect(() => {
@@ -35,6 +35,7 @@ function main() {
   return (
     <>
       <main>
+        <h1 className="hidden">Portfolio of Duisen Gulminez</h1>
         <Home toScroll={handleDivId}/>
         <About />
         <Resume />

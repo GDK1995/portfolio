@@ -5,7 +5,7 @@ function header(props) {
   return (
     <>
       <header className="bg-black">
-        <div className='flex items-center max-w-[1248px] mx-auto justify-between p-4'>
+        <div className='flex items-center max-w-[1248px] mx-auto justify-between p-4 h-[72px]'>
           <LogoItem />
           <NavItem scroll={props.scroll}/>
         </div>

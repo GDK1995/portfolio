@@ -16,7 +16,7 @@ function footer () {
   return (
     <>
       <footer id="contacts" className='bg-black flex flex-col items-center pt-16 pb-6 text-white'>
-      <h5 className={PINK_TEXT}>{CONTACTS}</h5>
+        <h2 className={PINK_TEXT}>{CONTACTS}</h2>
         <div className='flex my-20'>
           {contact}
         </div>

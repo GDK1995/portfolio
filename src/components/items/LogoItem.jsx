@@ -3,7 +3,7 @@ function Logo () {
     <>
       <a href="/">
         <img
-          className="h-20 my-auto lg:h-20"
+          className="h-12 my-auto lg:h-14"
           src="src/assets/img/dg.png"
           alt="logotip" />
       </a>

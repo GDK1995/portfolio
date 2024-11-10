@@ -1,21 +1,19 @@
-import { FaInstagram } from "react-icons/fa";
-import { FaTelegramPlane } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa"
+import { FaTelegramPlane } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { CONTACT_LINKS } from "../../store/constants"
 
 function Contacts () {
   return (
     <>
-      <div className="flex gap-6 items-center">
-        <a href="https://github.com/GDK1995/" target="_blank" className="cursor-pointer">
-          <FaGithub fill="white" size={20}/>
-        </a>
-        <a href="https://web.telegram.org/k/#@gd_08" target="_blank" className="cursor-pointer">
-          <FaTelegramPlane fill="white" size={20}/>
-        </a>
-        <a href="https://www.instagram.com/g.d.08/" target="_blank" className="cursor-pointer">
-          <FaInstagram fill="white" size={20}/>
-        </a>
-      </div>
+      <ul className="flex flex-row gap-5 mb-8">
+        {CONTACT_LINKS.map((item, index) =>
+          <li key={item + index} className="flex gap-6 items-center">
+            <a href={item} target="_blank" className="cursor-pointer">
+              {item.includes('github') ? <FaGithub fill="white" size={24}/> : item.includes('telegram') ? <FaTelegramPlane fill="white" size={24}/> : <FaInstagram fill="white" size={24}/>}
+            </a>
+        </li>)}
+      </ul>
     </>
   )
 }

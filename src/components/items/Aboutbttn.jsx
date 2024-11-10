@@ -6,7 +6,7 @@ function aboutBttn (props) {
 
   return (
     <>
-      <button onClick={clicked} className='flex justify-center border border-gray-500 hover:border-pink-500 ease-in-out duration-500 p-4'>
+      <button onClick={clicked} className='flex justify-center border border-gray-500 hover:border-pink-500 ease-in-out duration-500 py-4 px-6'>
         <p className='uppercase font-bold'>{MORE_ABOUT_ME}</p>
         <MdKeyboardArrowDown fill='white' size={20} className='my-auto ml-2'/>
       </button>

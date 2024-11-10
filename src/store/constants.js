@@ -126,3 +126,5 @@ export const PLACE = 'Almaty, Kazakhstan'
 export const CONT_LIST = [PLACE, MY_MAIL]
 
 export const YEAR = '2024'
+
+export const CONTACT_LINKS = ['https://github.com/GDK1995/', 'https://web.telegram.org/k/#@gd_08', 'https://www.instagram.com/g.d.08/']

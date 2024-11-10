@@ -14,7 +14,7 @@ function Nav (props) {
     <li
       key={nav + index}
       onClick={e => clicked(e.target.innerHTML)}
-      className="cursor-pointer border-b border-gray-100 lg:border-none text-sm hover:text-base lg:text-lg hover:lg:text-xl w-36 lg:w-auto ease-in-out duration-200 z-10 bg-black p-4 lg:p-0">
+      className="cursor-pointer border-b border-gray-100 lg:border-none text-xs hover:text-sm lg:text-sm hover:lg:text-base w-36 lg:w-auto ease-in-out duration-200 z-10 bg-black p-4 lg:p-0">
       <a href="/">
         { nav }
       </a>
@@ -24,11 +24,11 @@ function Nav (props) {
   return (
     <>
       <nav>
-        <div
+        <button
           onClick={handleNav}
-          className="cursor-pointer block lg:hidden ease-in-out duration-300">
+          className="block lg:hidden ease-in-out duration-300">
           {nav ? <AiOutlineClose fill="white" size={20}/> : <AiOutlineMenu fill="white" size={20}/>}
-        </div>
+        </button>
         <ul className={nav ? 'flex flex-col lg:flex-row lg:gap-x-5 my-auto uppercase text-white absolute top-15 right-0 lg:static ease-in-out duration-500' : 'fixed right-[-200px]'}>
           {navList}
         </ul>
