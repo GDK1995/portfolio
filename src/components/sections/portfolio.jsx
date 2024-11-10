@@ -5,8 +5,8 @@ import PortfolioItem from "../items/PortfolioItem"
 function portfolio () {
   return (
     <>
-      <section id="portfolio" className="flex flex-col py-16 max-w-[1248px]">
-        <h2 className={`${PINK_TEXT} text-center mb-10`}>{PORTFOLIO}</h2>
+      <section id="portfolio" className="flex flex-col py-16 items-center">
+        <h2 className={`${PINK_TEXT} mb-10`}>{PORTFOLIO}</h2>
         <PortfolioItem />
       </section>
     </>
