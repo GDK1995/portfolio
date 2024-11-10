@@ -6,7 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      gridTemplateColumns: 'repeat(200px, minmax(0, 1fr))'
     },
   },
   plugins: [],
