@@ -7,7 +7,9 @@ function portfolio () {
     <>
       <section id="portfolio" className="flex flex-col py-16 items-center">
         <h2 className={`${PINK_TEXT} mb-10`}>{PORTFOLIO}</h2>
-        <PortfolioItem />
+        <div className="">
+          <PortfolioItem />
+        </div>
       </section>
     </>
   )

@@ -129,4 +129,4 @@ export const YEAR = '2024'
 
 export const CONTACT_LINKS = ['https://github.com/GDK1995/', 'https://web.telegram.org/k/#@gd_08', 'https://www.instagram.com/g.d.08/']
 
-export const PORTFOLIO_LIST = ['src/assets/img/projects/qArt/qart2.jpg', 'src/assets/img/projects/shai/shai.jpg']
+export const PORTFOLIO_LIST = ['src/assets/img/projects/qArt/qart2.jpg', 'src/assets/img/projects/shai/shai.jpg', 'src/assets/img/projects/excourse/excourse.png']
